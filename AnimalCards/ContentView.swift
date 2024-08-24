@@ -8,14 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = AnimalViewModel()
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView{
+            VStack {
+                // Language Picker with Localization
+                Picker("Language", selection: $viewModel.selectedLanguage) {
+                    Text(NSLocalizedString("language_english", comment: "")).tag(Animal.Language.english)
+                    Text(NSLocalizedString("language_thai", comment: "")).tag(Animal.Language.thai)
+                    Text(NSLocalizedString("language_japanese", comment: "")).tag(Animal.Language.japanese)
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .padding()
+                
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(viewModel.animals) { animal in
+                            AnimalCardView(animal: animal, viewModel: viewModel)
+                        }
+                    }
+                    .padding()
+                }
+            }
+            .navigationTitle("Animal Sound")
         }
-        .padding()
     }
 }
 
