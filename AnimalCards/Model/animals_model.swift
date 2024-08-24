@@ -16,5 +16,7 @@ struct Animal: Identifiable {
         case english
         case thai
         case japanese
+        case myanmar
+        case mon
     }
 }

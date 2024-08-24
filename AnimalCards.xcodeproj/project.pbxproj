@@ -21,6 +21,12 @@
 		71D8EE302C7A4B2700D26968 /* dog_en.wav in Resources */ = {isa = PBXBuildFile; fileRef = 71D8EE2D2C7A4B2700D26968 /* dog_en.wav */; };
 		71D8EE312C7A4B2700D26968 /* cat_en.wav in Resources */ = {isa = PBXBuildFile; fileRef = 71D8EE2E2C7A4B2700D26968 /* cat_en.wav */; };
 		71D8EE332C7A514600D26968 /* AnimalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D8EE322C7A514600D26968 /* AnimalCardView.swift */; };
+		71D8EE3C2C7A67BA00D26968 /* elephant_mon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 71D8EE362C7A67BA00D26968 /* elephant_mon.wav */; };
+		71D8EE3D2C7A67BA00D26968 /* elephant_my.wav in Resources */ = {isa = PBXBuildFile; fileRef = 71D8EE372C7A67BA00D26968 /* elephant_my.wav */; };
+		71D8EE3E2C7A67BA00D26968 /* cat_mon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 71D8EE382C7A67BA00D26968 /* cat_mon.wav */; };
+		71D8EE3F2C7A67BA00D26968 /* dog_mon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 71D8EE392C7A67BA00D26968 /* dog_mon.wav */; };
+		71D8EE402C7A67BA00D26968 /* cat_my.wav in Resources */ = {isa = PBXBuildFile; fileRef = 71D8EE3A2C7A67BA00D26968 /* cat_my.wav */; };
+		71D8EE412C7A67BA00D26968 /* dog_my.wav in Resources */ = {isa = PBXBuildFile; fileRef = 71D8EE3B2C7A67BA00D26968 /* dog_my.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,14 @@
 		71D8EE2D2C7A4B2700D26968 /* dog_en.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog_en.wav; sourceTree = "<group>"; };
 		71D8EE2E2C7A4B2700D26968 /* cat_en.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat_en.wav; sourceTree = "<group>"; };
 		71D8EE322C7A514600D26968 /* AnimalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardView.swift; sourceTree = "<group>"; };
+		71D8EE342C7A590700D26968 /* my */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = my; path = my.lproj/Localizable.strings; sourceTree = "<group>"; };
+		71D8EE352C7A5D9600D26968 /* my-MM */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "my-MM"; path = "my-MM.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		71D8EE362C7A67BA00D26968 /* elephant_mon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant_mon.wav; sourceTree = "<group>"; };
+		71D8EE372C7A67BA00D26968 /* elephant_my.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant_my.wav; sourceTree = "<group>"; };
+		71D8EE382C7A67BA00D26968 /* cat_mon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat_mon.wav; sourceTree = "<group>"; };
+		71D8EE392C7A67BA00D26968 /* dog_mon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog_mon.wav; sourceTree = "<group>"; };
+		71D8EE3A2C7A67BA00D26968 /* cat_my.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat_my.wav; sourceTree = "<group>"; };
+		71D8EE3B2C7A67BA00D26968 /* dog_my.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog_my.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +173,12 @@
 		71D8EE2B2C7A4AFE00D26968 /* AnimalSound */ = {
 			isa = PBXGroup;
 			children = (
+				71D8EE382C7A67BA00D26968 /* cat_mon.wav */,
+				71D8EE3A2C7A67BA00D26968 /* cat_my.wav */,
+				71D8EE392C7A67BA00D26968 /* dog_mon.wav */,
+				71D8EE3B2C7A67BA00D26968 /* dog_my.wav */,
+				71D8EE362C7A67BA00D26968 /* elephant_mon.wav */,
+				71D8EE372C7A67BA00D26968 /* elephant_my.wav */,
 				71D8EE2E2C7A4B2700D26968 /* cat_en.wav */,
 				71D8EE2C2C7A4B2700D26968 /* cow_en.wav */,
 				71D8EE2D2C7A4B2700D26968 /* dog_en.wav */,
@@ -254,6 +274,8 @@
 				Base,
 				th,
 				ja,
+				my,
+				"my-MM",
 			);
 			mainGroup = 71D8EDE92C78DC5900D26968;
 			productRefGroup = 71D8EDF32C78DC5900D26968 /* Products */;
@@ -274,9 +296,15 @@
 			files = (
 				71D8EE302C7A4B2700D26968 /* dog_en.wav in Resources */,
 				71D8EDFD2C78DC5B00D26968 /* Preview Assets.xcassets in Resources */,
+				71D8EE3F2C7A67BA00D26968 /* dog_mon.wav in Resources */,
+				71D8EE3D2C7A67BA00D26968 /* elephant_my.wav in Resources */,
+				71D8EE402C7A67BA00D26968 /* cat_my.wav in Resources */,
+				71D8EE3C2C7A67BA00D26968 /* elephant_mon.wav in Resources */,
 				71D8EE212C793F3700D26968 /* Localizable.strings in Resources */,
 				71D8EE312C7A4B2700D26968 /* cat_en.wav in Resources */,
 				71D8EDFA2C78DC5B00D26968 /* Assets.xcassets in Resources */,
+				71D8EE412C7A67BA00D26968 /* dog_my.wav in Resources */,
+				71D8EE3E2C7A67BA00D26968 /* cat_mon.wav in Resources */,
 				71D8EE2F2C7A4B2700D26968 /* cow_en.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +377,8 @@
 				71D8EE202C793F3700D26968 /* en */,
 				71D8EE242C79462B00D26968 /* ja */,
 				71D8EE252C79462C00D26968 /* th */,
+				71D8EE342C7A590700D26968 /* my */,
+				71D8EE352C7A5D9600D26968 /* my-MM */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

@@ -23,6 +23,8 @@ struct ContentView: View {
                     Text(NSLocalizedString("language_english", comment: "")).tag(Animal.Language.english)
                     Text(NSLocalizedString("language_thai", comment: "")).tag(Animal.Language.thai)
                     Text(NSLocalizedString("language_japanese", comment: "")).tag(Animal.Language.japanese)
+                    Text(NSLocalizedString("language_mon", comment: "")).tag(Animal.Language.mon)
+                    Text(NSLocalizedString("language_myanmar", comment: "")).tag(Animal.Language.myanmar)
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding()
