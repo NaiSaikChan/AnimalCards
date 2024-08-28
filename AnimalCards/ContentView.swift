@@ -9,35 +9,32 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var viewModel = AnimalViewModel()
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.verticalSizeClass) var verticalSizeClass
     
-    let columns = [
-        GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
+    var columns: [GridItem] {
+        // Determine the number of columns base on size class
+        if horizontalSizeClass == .compact && verticalSizeClass == .regular {
+            // iPhone Portrait Mode: 1 Column
+            return [GridItem(.flexible())]
+        } else {
+            // iPhone Landscape or iPad (Both Orientations): 2 Columns
+            return [GridItem(.flexible()), GridItem(.flexible())]
+        }
+    }
     
     var body: some View {
-        NavigationView{
-            VStack {
-                // Language Picker with Localization
-                Picker("Language", selection: $viewModel.selectedLanguage) {
-                    Text(NSLocalizedString("language_english", comment: "")).tag(Animal.Language.english)
-                    Text(NSLocalizedString("language_thai", comment: "")).tag(Animal.Language.thai)
-                    Text(NSLocalizedString("language_japanese", comment: "")).tag(Animal.Language.japanese)
-                    Text(NSLocalizedString("language_mon", comment: "")).tag(Animal.Language.mon)
-                    Text(NSLocalizedString("language_myanmar", comment: "")).tag(Animal.Language.myanmar)
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
-                
-                ScrollView {
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(viewModel.animals) { animal in
-                            AnimalCardView(animal: animal, viewModel: viewModel)
-                        }
+        NavigationStack{
+            
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(viewModel.animals) { animal in
+                        AnimalCardView(animal: animal, viewModel: viewModel)
                     }
-                    .padding()
                 }
+                .padding()
             }
+            .background(Color(.systemGroupedBackground))
             .navigationTitle("Animal Sound")
         }
     }
