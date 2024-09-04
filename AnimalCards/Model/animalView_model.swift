@@ -298,7 +298,7 @@ class AnimalViewModel: ObservableObject {
             imageName: "eel"
         ),
 		Animal(
-            name: [.english: "Cow", .thai: "วัว", .japanese: "牛", .myanmar: "နွား", .mon: "ဂၠဴ"],
+            name: [.english: "Cow", .thai: "วัว", .japanese: "牛", .myanmar: "နွားမ", .mon: "ဂၠဴၝောံ"],
             soundFileNames: [.english: "cow_en", .thai: "cow_th", .japanese: "cow_jp", .myanmar: "cow_my", .mon: "cow_mon"],
             imageName: "cow"
         ),
@@ -373,17 +373,17 @@ class AnimalViewModel: ObservableObject {
             imageName: "lion"
         ),
 		Animal(
-            name: [.english: "Parrot", .thai: "นกแก้ว", .japanese: "オウム", .myanmar: "ကြက်တူရွေး", .mon: "တ္ၚေက်"],
+            name: [.english: "Parrot", .thai: "นกแก้ว", .japanese: "オウム", .myanmar: "ကြက်တူရွေး", .mon: "ဂစေံတ္ၚေက်"],
             soundFileNames: [.english: "parrot_en", .thai: "parrot_th", .japanese: "parrot_jp", .myanmar: "parrot_my", .mon: "parrot_mon"],
             imageName: "parrot"
         ),
 		Animal(
-            name: [.english: "Quail", .thai: "นกกระทา", .japanese: "ウズラ", .myanmar: "ငုံး", .mon: "ဒဂုတ်"],
+            name: [.english: "Quail", .thai: "นกกระทา", .japanese: "ウズラ", .myanmar: "ငုံးငှက်", .mon: "ဂစေံဒဂုတ်"],
             soundFileNames: [.english: "quail_en", .thai: "quail_th", .japanese: "quail_jp", .myanmar: "quail_my", .mon: "quail_mon"],
             imageName: "quail"
         ),
 		Animal(
-            name: [.english: "Pelican", .thai: "นกกระทุง", .japanese: "ペリカン", .myanmar: "ငှက်ကြီးစံပို", .mon: "ဒိုၚ်မံၚ်"],
+            name: [.english: "Pelican", .thai: "นกกระทุง", .japanese: "ペリカン", .myanmar: "ငှက်ကြီးစံပို", .mon: "ဂစေံဒိုၚ်မံၚ်"],
             soundFileNames: [.english: "pelican_en", .thai: "pelican_th", .japanese: "pelican_jp", .myanmar: "pelican_my", .mon: "pelican_mon"],
             imageName: "pelican"
         ),
@@ -403,9 +403,9 @@ class AnimalViewModel: ObservableObject {
             imageName: "buffalo"
         ),
 		Animal(
-            name: [.english: "A Worm", .thai: "หนอน", .japanese: "虫", .myanmar: "တီကောင်", .mon: "ပ္ကောတ်တိ"],
-            soundFileNames: [.english: "a worm_en", .thai: "a worm_th", .japanese: "a worm_jp", .myanmar: "a worm_my", .mon: "a worm_mon"],
-            imageName: "a worm"
+            name: [.english: "Earthworm", .thai: "ไส้เดือน", .japanese: "虫", .myanmar: "တီကောင်", .mon: "ပ္ကောတ်တိ"],
+            soundFileNames: [.english: "earthworm_en", .thai: "earthworm_th", .japanese: "earthworm_jp", .myanmar: "earthworm_my", .mon: "earthworm_mon"],
+            imageName: "earthworm"
         ),
 		Animal(
             name: [.english: "Otter", .thai: "นาก", .japanese: "カワウソ", .myanmar: "ဖျံ", .mon: "ဖေံ"],
@@ -493,7 +493,7 @@ class AnimalViewModel: ObservableObject {
             imageName: "turtle"
         ),
 		Animal(
-            name: [.english: "Swan", .thai: "หงส์", .japanese: "ハクチョウ属", .myanmar: "ငန်း", .mon: "အဟာန်"],
+            name: [.english: "Swan", .thai: "หงส์", .japanese: "ハクチョウ属", .myanmar: "ဘဲငန်း", .mon: "အဟာန်"],
             soundFileNames: [.english: "swan_en", .thai: "swan_th", .japanese: "swan_jp", .myanmar: "swan_my", .mon: "swan_mon"],
             imageName: "swan"
         ),
